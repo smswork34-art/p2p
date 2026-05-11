@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+    <title>Публичная оферта · USDT→RUB</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0f0f0f;
+            --card: #1c1c1e;
+            --gray: #2c2c2e;
+            --gray2: #3a3a3c;
+            --text: #ffffff;
+            --sub: #8e8e93;
+            --blue: #007aff;
+            --green: #34c759;
+            --red: #ff453a;
+            --radius: 16px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: var(--bg);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+        }
+
+        .app {
+            width: 100%;
+            max-width: 420px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .card {
+            background: var(--card);
+            border-radius: 24px;
+            padding: 24px 20px 28px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.05);
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .back-btn {
+            background: var(--gray);
+            border: 1px solid var(--gray2);
+            color: var(--text);
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.2s;
+            flex-shrink: 0;
+            text-decoration: none;
+        }
+        .back-btn:hover {
+            background: var(--gray2);
+        }
+        .back-btn svg {
+            width: 18px;
+            height: 18px;
+        }
+        .header h2 {
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: -0.3px;
+        }
+        .header-icon {
+            width: 24px;
+            height: 24px;
+            flex-shrink: 0;
+        }
+
+        .content {
+            font-size: 14px;
+            line-height: 1.7;
+            color: var(--sub);
+        }
+        .content h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text);
+            margin: 20px 0 10px;
+        }
+        .content h3:first-child {
+            margin-top: 0;
+        }
+        .content p {
+            margin-bottom: 10px;
+        }
+        .content ul {
+            margin-bottom: 10px;
+            padding-left: 20px;
+        }
+        .content ul li {
+            margin-bottom: 6px;
+        }
+        .content strong {
+            color: var(--text);
+            font-weight: 600;
+        }
+        .divider {
+            height: 1px;
+            background: var(--gray2);
+            margin: 16px 0;
+        }
+        .section-date {
+            font-size: 12px;
+            color: #636366;
+            margin-top: 20px;
+        }
+
+        /* Футер */
+        .footer {
+            background: var(--card);
+            border-radius: 24px;
+            padding: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.05);
+            font-size: 12px;
+            color: var(--sub);
+            line-height: 1.6;
+        }
+        .footer-brand {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 14px;
+        }
+        .footer-brand img {
+            width: 24px;
+            height: 24px;
+            border-radius: 4px;
+            object-fit: contain;
+        }
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
+            margin-bottom: 12px;
+            font-size: 13px;
+        }
+        .footer-links a {
+            color: var(--blue);
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.2s;
+            white-space: nowrap;
+        }
+        .footer-links a:hover {
+            opacity: 0.8;
+        }
+        .footer-separator {
+            color: var(--gray2);
+            font-weight: 400;
+        }
+        .footer-divider {
+            height: 1px;
+            background: var(--gray2);
+            margin: 12px 0;
+        }
+        .footer-contact {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            font-size: 12px;
+        }
+        .footer-contact-title {
+            font-weight: 600;
+            color: var(--sub);
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .footer-contact-row {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+        .footer-contact-row svg {
+            width: 13px;
+            height: 13px;
+            flex-shrink: 0;
+            opacity: 0.7;
+        }
+        .footer-contact-separator {
+            color: var(--gray2);
+            margin: 0 2px;
+        }
+        .footer-copy {
+            margin-top: 10px;
+            font-size: 11px;
+            color: #636366;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="app">
+        <div class="card">
+            <div class="header">
+                <a href="index.html" class="back-btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="19" y1="12" x2="5" y2="12"></line>
+                        <polyline points="12 19 5 12 12 5"></polyline>
+                    </svg>
+                </a>
+                <h2>Публичная оферта</h2>
+            </div>
+
+            <div class="content">
+                <h3>1. Общие положения</h3>
+                <p>Настоящий документ является официальным предложением (публичной офертой) заключить договор купли-продажи криптовалюты <strong>USDT</strong> за рубли Российской Федерации (<strong>RUB</strong>).</p>
+
+                <h3>2. Предмет договора</h3>
+                <p>Продавец обязуется передать в собственность Покупателя криптовалюту USDT, а Покупатель обязуется принять и оплатить её стоимость в рублях по курсу, установленному на момент создания заявки.</p>
+
+                <h3>3. Порядок обмена</h3>
+                <ul>
+                    <li>Покупатель создаёт заявку на сайте, указывая сумму USDT</li>
+                    <li>Система рассчитывает сумму к получению в RUB с учётом комиссии <strong>0.5%</strong></li>
+                    <li>Покупатель получает ссылку для оплаты USDT</li>
+                    <li>После оплаты Покупатель предоставляет хеш транзакции (TX HASH)</li>
+                    <li>Продавец проверяет поступление средств в блокчейне</li>
+                    <li>После подтверждения Продавец отправляет RUB Покупателю</li>
+                </ul>
+
+                <h3>4. Курс обмена</h3>
+                <p>Курс обмена <strong>фиксируется</strong> в момент создания заявки. Продавец оставляет за собой право изменять курс для новых заявок в любое время.</p>
+
+                <h3>5. Комиссия</h3>
+                <p>Комиссия сервиса составляет <strong>0.5%</strong> от суммы обмена. Комиссия включена в итоговый расчёт.</p>
+
+                <h3 id="agreement">6. Пользовательское соглашение</h3>
+                <p>Создавая заявку, вы подтверждаете, что:</p>
+                <ul>
+                    <li>Вам исполнилось 18 лет</li>
+                    <li>Вы действуете от своего имени и в своих интересах</li>
+                    <li>Средства имеют законное происхождение</li>
+                    <li>Вы принимаете все риски, связанные с волатильностью курса</li>
+                    <li>Вы согласны с условиями настоящей оферты</li>
+                </ul>
+
+                <h3>7. Возврат средств</h3>
+                <p>Возврат USDT возможен только до момента отправки RUB Продавцом. После отправки RUB возврат не производится.</p>
+
+                <h3>8. Ответственность сторон</h3>
+                <p>Продавец не несёт ответственности за задержки, вызванные перегрузкой блокчейн-сетей, техническими сбоями платёжных систем или действиями третьих лиц.</p>
+
+                <h3>9. Контакты</h3>
+                <p>По всем вопросам: <strong>@support_usdt_rub</strong> в Telegram или <strong>support@usdtrub.ru</strong></p>
+
+                <div class="section-date">
+                    Дата последнего обновления: 12 мая 2026 года
+                </div>
+            </div>
+        </div>
+
+        <!-- ФУТЕР -->
+        <div class="footer">
+            <div class="footer-brand">
+                <img src="send.png" alt="Logo" width="24" height="24" onerror="this.style.display='none'">
+            </div>
+
+            <div class="footer-links">
+                <a href="oferta.html">Оферта</a>
+                <span class="footer-separator">•</span>
+                <a href="privacy.html">Конфиденциальность</a>
+                <span class="footer-separator">•</span>
+                <a href="oferta.html#agreement">Пользовательское соглашение</a>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-contact">
+                <span class="footer-contact-title">Контактные данные</span>
+                <div class="footer-contact-row">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161c-.18.69-.962 4.088-1.362 5.426-.168.59-.5.788-.822.808-.7.064-1.23-.462-1.909-.905-1.06-.694-1.66-1.127-2.689-1.804-1.189-.784-.418-1.214.26-1.918.178-.185 3.27-2.997 3.33-3.252.007-.032.014-.15-.056-.212-.07-.062-.174-.04-.248-.024-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.01-1.252-.242-1.865-.44-.752-.245-1.349-.374-1.297-.79.027-.216.325-.437.893-.663 3.496-1.523 5.828-2.527 6.994-3.013 3.332-1.386 4.024-1.627 4.476-1.635.1-.002.321.023.465.14.12.099.153.233.17.327.017.094.038.308.021.478z"/></svg>
+                    <span>@support_usdt_rub</span>
+                    <span class="footer-contact-separator">•</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    <span>support@usdtrub.ru</span>
+                </div>
+            </div>
+
+            <div class="footer-copy">
+                © 2025 USDT↔RUB Обменник. Все права защищены.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
