@@ -21,11 +21,7 @@
             --radius: 16px;
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
             background: var(--bg);
@@ -46,12 +42,11 @@
             gap: 20px;
         }
 
-        /* ============ КАРТОЧКИ ============ */
         .card {
             background: var(--card);
             border-radius: 24px;
             padding: 24px 20px 28px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.05);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.05);
         }
 
         .header {
@@ -68,11 +63,7 @@
             gap: 8px;
             letter-spacing: -0.3px;
         }
-        .header-icon {
-            width: 24px;
-            height: 24px;
-            flex-shrink: 0;
-        }
+        .header-icon { width: 24px; height: 24px; flex-shrink: 0; }
         .badge {
             background: var(--gray);
             padding: 6px 12px;
@@ -85,14 +76,12 @@
             gap: 6px;
         }
         .dot {
-            width: 8px;
-            height: 8px;
+            width: 8px; height: 8px;
             border-radius: 50%;
             background: var(--green);
             box-shadow: 0 0 6px var(--green);
         }
 
-        /* ============ КУРС ============ */
         .rate-row {
             background: var(--gray);
             border-radius: var(--radius);
@@ -101,7 +90,7 @@
             justify-content: space-between;
             align-items: center;
             margin-bottom: 16px;
-            border: 1px solid rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255,255,255,0.04);
         }
         .rate-label {
             font-size: 14px;
@@ -110,20 +99,10 @@
             align-items: center;
             gap: 6px;
         }
-        .rate-label svg {
-            width: 16px;
-            height: 16px;
-            flex-shrink: 0;
-        }
-        .rate-value {
-            font-size: 18px;
-            font-weight: 600;
-        }
+        .rate-label svg { width: 16px; height: 16px; flex-shrink: 0; }
+        .rate-value { font-size: 18px; font-weight: 600; }
 
-        /* ============ ПОЛЯ ВВОДА ============ */
-        .field {
-            margin-bottom: 14px;
-        }
+        .field { margin-bottom: 14px; }
         .field-label {
             font-size: 14px;
             font-weight: 500;
@@ -143,11 +122,7 @@
             align-items: center;
             gap: 4px;
         }
-        .currency-tag svg {
-            width: 14px;
-            height: 14px;
-            flex-shrink: 0;
-        }
+        .currency-tag svg { width: 14px; height: 14px; flex-shrink: 0; }
         .input {
             background: var(--gray);
             border: 1px solid var(--gray2);
@@ -164,26 +139,14 @@
         }
         .input:focus {
             border-color: var(--blue);
-            box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.2);
+            box-shadow: 0 0 0 3px rgba(0,122,255,0.2);
         }
-        .input::placeholder {
-            color: #636366;
-            font-weight: 400;
-        }
-        .input:read-only {
-            opacity: 0.8;
-            cursor: default;
-        }
-        input[type="number"] {
-            -moz-appearance: textfield;
-        }
+        .input::placeholder { color: #636366; font-weight: 400; }
+        .input:read-only { opacity: 0.8; cursor: default; }
+        input[type="number"] { -moz-appearance: textfield; }
         input[type="number"]::-webkit-outer-spin-button,
-        input[type="number"]::-webkit-inner-spin-button {
-            -webkit-appearance: none;
-            margin: 0;
-        }
+        input[type="number"]::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
 
-        /* ============ КНОПКИ ============ */
         .btn {
             width: 100%;
             border: none;
@@ -200,22 +163,10 @@
             gap: 8px;
             letter-spacing: -0.2px;
         }
-        .btn svg {
-            width: 18px;
-            height: 18px;
-            flex-shrink: 0;
-        }
-        .btn-primary {
-            background: var(--blue);
-            color: #fff;
-            box-shadow: 0 8px 20px rgba(0, 122, 255, 0.3);
-        }
-        .btn-primary:hover {
-            background: #1a6ddd;
-        }
-        .btn-primary:active {
-            transform: scale(0.97);
-        }
+        .btn svg { width: 18px; height: 18px; flex-shrink: 0; }
+        .btn-primary { background: var(--blue); color: #fff; box-shadow: 0 8px 20px rgba(0,122,255,0.3); }
+        .btn-primary:hover { background: #1a6ddd; }
+        .btn-primary:active { transform: scale(0.97); }
         .btn-outline {
             background: transparent;
             border: 1px solid var(--blue);
@@ -223,9 +174,7 @@
             padding: 10px;
             font-size: 14px;
         }
-        .btn-outline:hover {
-            background: rgba(0, 122, 255, 0.08);
-        }
+        .btn-outline:hover { background: rgba(0,122,255,0.08); }
         .btn-ghost {
             background: transparent;
             border: 1px solid var(--gray2);
@@ -233,30 +182,17 @@
             padding: 10px;
             font-size: 14px;
         }
-        .btn-ghost:hover {
-            background: var(--gray);
-            color: var(--text);
-        }
-        .btn:disabled {
-            opacity: 0.4;
-            pointer-events: none;
-            cursor: not-allowed;
-        }
+        .btn-ghost:hover { background: var(--gray); color: var(--text); }
+        .btn:disabled { opacity: 0.4; pointer-events: none; cursor: not-allowed; }
 
-        /* ============ РАЗДЕЛИТЕЛЬ ============ */
-        .divider {
-            height: 1px;
-            background: var(--gray2);
-            margin: 20px 0;
-        }
+        .divider { height: 1px; background: var(--gray2); margin: 20px 0; }
 
-        /* ============ ССЫЛКА НА ОПЛАТУ ============ */
         .link-box {
             background: var(--gray);
             border-radius: var(--radius);
             padding: 14px 16px;
             margin-bottom: 16px;
-            border: 1px solid rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255,255,255,0.04);
         }
         .link-box-label {
             color: var(--sub);
@@ -266,11 +202,7 @@
             gap: 6px;
             margin-bottom: 8px;
         }
-        .link-box-label svg {
-            width: 14px;
-            height: 14px;
-            flex-shrink: 0;
-        }
+        .link-box-label svg { width: 14px; height: 14px; flex-shrink: 0; }
         .link-text {
             color: var(--blue);
             word-break: break-all;
@@ -281,9 +213,51 @@
             margin-bottom: 10px;
             line-height: 1.4;
         }
-        .link-text:hover {
-            color: #5a9eff;
+        .link-text:hover { color: #5a9eff; }
+
+        /* ============ БЛОК СБП ============ */
+        .sbp-block {
+            background: var(--gray);
+            border-radius: var(--radius);
+            padding: 16px;
+            margin-top: 16px;
+            border: 1px solid rgba(255,255,255,0.04);
         }
+        .sbp-block-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .sbp-block-title svg { width: 16px; height: 16px; flex-shrink: 0; }
+        .sbp-fields {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .sbp-field-label {
+            font-size: 12px;
+            color: var(--sub);
+            margin-bottom: 4px;
+        }
+        .sbp-input {
+            background: var(--card);
+            border: 1px solid var(--gray2);
+            border-radius: 12px;
+            padding: 10px 14px;
+            font-size: 15px;
+            font-weight: 500;
+            color: var(--text);
+            width: 100%;
+            outline: none;
+            font-family: inherit;
+            transition: border 0.2s;
+        }
+        .sbp-input:focus { border-color: var(--blue); }
+        .sbp-input::placeholder { color: #636366; }
 
         /* ============ СТАТУС ============ */
         .status-block {
@@ -304,34 +278,13 @@
             font-size: 13px;
             font-weight: 600;
         }
-        .status-pending {
-            background: rgba(255, 149, 0, 0.2);
-            color: #ff9500;
-        }
-        .status-paid {
-            background: rgba(0, 122, 255, 0.2);
-            color: #007aff;
-        }
-        .status-confirmed {
-            background: rgba(52, 199, 89, 0.2);
-            color: #34c759;
-        }
-        .status-completed {
-            background: rgba(52, 199, 89, 0.3);
-            color: #34c759;
-        }
-        .status-rejected {
-            background: rgba(255, 69, 58, 0.2);
-            color: #ff453a;
-        }
+        .status-pending { background: rgba(255,149,0,0.2); color: #ff9500; }
+        .status-paid { background: rgba(0,122,255,0.2); color: #007aff; }
+        .status-confirmed { background: rgba(52,199,89,0.2); color: #34c759; }
+        .status-completed { background: rgba(52,199,89,0.3); color: #34c759; }
+        .status-rejected { background: rgba(255,69,58,0.2); color: #ff453a; }
 
-        /* ============ СООБЩЕНИЯ ============ */
-        .note {
-            font-size: 12px;
-            color: var(--sub);
-            margin-top: 4px;
-            line-height: 1.4;
-        }
+        .note { font-size: 12px; color: var(--sub); margin-top: 4px; line-height: 1.4; }
         .error-msg {
             color: var(--red);
             font-size: 13px;
@@ -340,14 +293,8 @@
             align-items: center;
             gap: 4px;
         }
-        .error-msg.show {
-            display: flex;
-        }
-        .error-msg svg {
-            width: 14px;
-            height: 14px;
-            flex-shrink: 0;
-        }
+        .error-msg.show { display: flex; }
+        .error-msg svg { width: 14px; height: 14px; flex-shrink: 0; }
         .success-msg {
             color: var(--green);
             font-size: 13px;
@@ -356,16 +303,9 @@
             align-items: center;
             gap: 4px;
         }
-        .success-msg.show {
-            display: flex;
-        }
-        .success-msg svg {
-            width: 14px;
-            height: 14px;
-            flex-shrink: 0;
-        }
+        .success-msg.show { display: flex; }
+        .success-msg svg { width: 14px; height: 14px; flex-shrink: 0; }
 
-        /* ============ ИНФО-СТРОКИ ============ */
         .info-row {
             display: flex;
             justify-content: space-between;
@@ -373,17 +313,14 @@
             font-size: 14px;
             color: var(--sub);
         }
-        .info-row span:last-child {
-            color: var(--text);
-            font-weight: 500;
-        }
+        .info-row span:last-child { color: var(--text); font-weight: 500; }
 
         /* ============ ФУТЕР ============ */
         .footer {
             background: var(--card);
             border-radius: 24px;
             padding: 20px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.05);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.05);
             font-size: 12px;
             color: var(--sub);
             line-height: 1.6;
@@ -416,18 +353,9 @@
             transition: opacity 0.2s;
             white-space: nowrap;
         }
-        .footer-links a:hover {
-            opacity: 0.8;
-        }
-        .footer-separator {
-            color: var(--gray2);
-            font-weight: 400;
-        }
-        .footer-divider {
-            height: 1px;
-            background: var(--gray2);
-            margin: 12px 0;
-        }
+        .footer-links a:hover { opacity: 0.8; }
+        .footer-separator { color: var(--gray2); font-weight: 400; }
+        .footer-divider { height: 1px; background: var(--gray2); margin: 12px 0; }
         .footer-contact {
             display: flex;
             flex-direction: column;
@@ -447,22 +375,9 @@
             gap: 6px;
             flex-wrap: wrap;
         }
-        .footer-contact-row svg {
-            width: 13px;
-            height: 13px;
-            flex-shrink: 0;
-            opacity: 0.7;
-        }
-        .footer-contact-separator {
-            color: var(--gray2);
-            margin: 0 2px;
-        }
-        .footer-copy {
-            margin-top: 10px;
-            font-size: 11px;
-            color: #636366;
-            text-align: center;
-        }
+        .footer-contact-row svg { width: 13px; height: 13px; flex-shrink: 0; opacity: 0.7; }
+        .footer-contact-separator { color: var(--gray2); margin: 0 2px; }
+        .footer-copy { margin-top: 10px; font-size: 11px; color: #636366; text-align: center; }
     </style>
 </head>
 <body>
@@ -484,9 +399,7 @@
 
             <div class="rate-row">
                 <span class="rate-label">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
-                    </svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
                     Курс
                 </span>
                 <span class="rate-value"><span id="rateDisplay">96.45</span> ₽</span>
@@ -496,10 +409,7 @@
                 <div class="field-label">
                     <span>Вы отдаёте</span>
                     <span class="currency-tag">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="12" y1="1" x2="12" y2="23"></line>
-                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-                        </svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
                         USDT
                     </span>
                 </div>
@@ -510,25 +420,15 @@
                 <div class="field-label">
                     <span>Вы получаете</span>
                     <span class="currency-tag">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="6" y1="1" x2="6" y2="23"></line>
-                            <path d="M14 4h-4a6 6 0 0 0 0 12h4"></path>
-                            <line x1="9" y1="10" x2="18" y2="10"></line>
-                        </svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="1" x2="6" y2="23"></line><path d="M14 4h-4a6 6 0 0 0 0 12h4"></path><line x1="9" y1="10" x2="18" y2="10"></line></svg>
                         RUB
                     </span>
                 </div>
                 <input type="number" class="input" id="rubInput" placeholder="0.00" step="any" min="0" readonly>
             </div>
 
-            <div class="info-row">
-                <span>Комиссия</span>
-                <span>0.5%</span>
-            </div>
-            <div class="info-row">
-                <span>Минимальная сумма</span>
-                <span>10 USDT</span>
-            </div>
+            <div class="info-row"><span>Комиссия</span><span>0.5%</span></div>
+            <div class="info-row"><span>Минимальная сумма</span><span>10 USDT</span></div>
 
             <div id="exchangeError" class="error-msg">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
@@ -536,29 +436,17 @@
             </div>
 
             <button class="btn btn-primary" id="createOrderBtn" style="margin-top: 12px;">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                    <polyline points="14 2 14 8 20 8"></polyline>
-                    <line x1="12" y1="18" x2="12" y2="12"></line>
-                    <line x1="9" y1="15" x2="15" y2="15"></line>
-                </svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="15" y2="15"></line></svg>
                 Создать заявку
             </button>
-            <div class="note" style="text-align: center; margin-top: 10px;">
-                Вы получите ссылку для оплаты USDT
-            </div>
+            <div class="note" style="text-align: center; margin-top: 10px;">Вы получите ссылку для оплаты USDT</div>
         </div>
 
         <!-- КАРТОЧКА ЗАЯВКИ -->
         <div class="card" id="orderCard" style="display: none;">
             <div class="header">
                 <h2>
-                    <svg class="header-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                        <polyline points="14 2 14 8 20 8"></polyline>
-                        <line x1="16" y1="13" x2="8" y2="13"></line>
-                        <line x1="16" y1="17" x2="8" y2="17"></line>
-                    </svg>
+                    <svg class="header-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
                     Заявка
                 </h2>
                 <div class="badge" id="orderStatusBadge">Создана</div>
@@ -568,7 +456,6 @@
                 <span style="color: var(--sub); font-size: 14px;">К оплате</span>
                 <span style="font-size: 22px; font-weight: 700;" id="orderUsdt">0 USDT</span>
             </div>
-
             <div class="rate-row">
                 <span style="color: var(--sub); font-size: 14px;">Вы получите</span>
                 <span style="font-size: 22px; font-weight: 700;" id="orderRub">0 ₽</span>
@@ -576,18 +463,12 @@
 
             <div class="link-box">
                 <span class="link-box-label">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
-                        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
-                    </svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
                     Ссылка на оплату
                 </span>
                 <a id="paymentLink" href="#" target="_blank" class="link-text"></a>
                 <button class="btn btn-outline" id="copyLinkBtn" style="width: auto; padding: 8px 14px;">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-                    </svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
                     Скопировать
                 </button>
             </div>
@@ -605,10 +486,27 @@
                 <div class="note">Можно найти в истории вашего кошелька</div>
             </div>
 
+            <!-- НОВЫЙ БЛОК: Реквизиты СБП -->
+            <div class="sbp-block" id="sbpBlock">
+                <div class="sbp-block-title">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"></rect><line x1="2" y1="10" x2="22" y2="10"></line></svg>
+                    Реквизиты для выплаты RUB (СБП)
+                </div>
+                <div class="sbp-fields">
+                    <div>
+                        <div class="sbp-field-label">Банк</div>
+                        <input type="text" class="sbp-input" id="sbpBank" placeholder="Например: Сбербанк, Т-Банк, Альфа-Банк">
+                    </div>
+                    <div>
+                        <div class="sbp-field-label">Номер телефона</div>
+                        <input type="tel" class="sbp-input" id="sbpPhone" placeholder="+7 (999) 123-45-67">
+                    </div>
+                </div>
+                <div class="note" style="margin-top: 8px;">Деньги придут на ваш счёт по номеру телефона через СБП</div>
+            </div>
+
             <button class="btn btn-primary" id="markPaidBtn">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                 Я оплатил
             </button>
             <div id="orderError" class="error-msg">
@@ -636,32 +534,26 @@
                     <span id="orderIdText" style="font-size: 13px; font-family: monospace;"></span>
                 </div>
                 <button class="btn btn-ghost" id="checkStatusBtn" style="margin-top: 8px; width: auto; padding: 8px 16px;">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <polyline points="23 4 23 10 17 10"></polyline>
-                        <polyline points="1 20 1 14 7 14"></polyline>
-                        <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
-                    </svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"></polyline><polyline points="1 20 1 14 7 14"></polyline><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path></svg>
                     Обновить статус
                 </button>
             </div>
 
             <button class="btn btn-ghost" id="newOrderBtn" style="margin-top: 12px;">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="19" y1="12" x2="5" y2="12"></line>
-                    <polyline points="12 19 5 12 12 5"></polyline>
-                </svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
                 Создать новую заявку
             </button>
         </div>
 
         <!-- ФУТЕР -->
         <div class="footer">
-            <!-- Иконка send.png 24x24 -->
             <div class="footer-brand">
                 <img src="send.png" alt="Logo" width="24" height="24" onerror="this.style.display='none'">
             </div>
-
-            <!-- Ссылки -->
+            <div class="footer">
+            <div class="footer-brand">
+                <img src="send.png" alt="Logo" width="24" height="24" onerror="this.style.display='none'">
+            </div>
             <div class="footer-links">
                 <a href="oferta.html">Оферта</a>
                 <span class="footer-separator">•</span>
@@ -669,10 +561,7 @@
                 <span class="footer-separator">•</span>
                 <a href="oferta.html#agreement">Пользовательское соглашение</a>
             </div>
-
             <div class="footer-divider"></div>
-
-            <!-- Контактные данные -->
             <div class="footer-contact">
                 <span class="footer-contact-title">Контактные данные</span>
                 <div class="footer-contact-row">
@@ -683,10 +572,7 @@
                     <span>support@usdtrub.ru</span>
                 </div>
             </div>
-
-            <div class="footer-copy">
-                © 2025 USDT↔RUB Обменник. Все права защищены.
-            </div>
+            <div class="footer-copy">© 2025 USDT↔RUB Обменник. Все права защищены.</div>
         </div>
     </div>
 
@@ -697,7 +583,6 @@
 
             console.log('🚀 Инициализация Supabase...');
             const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
-            console.log('✅ Supabase клиент создан');
 
             let currentRate = 96.45;
             const COMMISSION = 0.5;
@@ -722,6 +607,8 @@
             const copyLinkBtn = $('#copyLinkBtn');
             const tgNickname = $('#tgNickname');
             const txHash = $('#txHash');
+            const sbpBank = $('#sbpBank');
+            const sbpPhone = $('#sbpPhone');
             const markPaidBtn = $('#markPaidBtn');
             const orderError = $('#orderError');
             const orderSuccess = $('#orderSuccess');
@@ -734,18 +621,12 @@
 
             function usdtToRub(usdt) {
                 const gross = usdt * currentRate;
-                const commissionAmount = gross * (COMMISSION / 100);
-                return Math.max(0, gross - commissionAmount);
+                return Math.max(0, gross - gross * (COMMISSION / 100));
             }
 
             function updateRub() {
                 const usdt = parseFloat(usdtInput.value) || 0;
-                if (usdt > 0) {
-                    const rub = usdtToRub(usdt);
-                    rubInput.value = rub.toFixed(2);
-                } else {
-                    rubInput.value = '';
-                }
+                rubInput.value = usdt > 0 ? usdtToRub(usdt).toFixed(2) : '';
                 clearExchangeError();
             }
 
@@ -753,297 +634,138 @@
                 const span = el.querySelector('span');
                 if (span) span.textContent = msg;
                 el.classList.add('show');
-                console.error(msg);
             }
-
-            function clearError(el) {
-                el.classList.remove('show');
-            }
-
+            function clearError(el) { el.classList.remove('show'); }
             function showSuccess(el, msg) {
                 const span = el.querySelector('span');
                 if (span) span.textContent = msg;
                 el.classList.add('show');
             }
-
-            function clearExchangeError() {
-                clearError(exchangeError);
-            }
+            function clearExchangeError() { clearError(exchangeError); }
 
             function getStatusClass(status) {
-                const classes = {
-                    'pending': 'status-pending',
-                    'paid': 'status-paid',
-                    'confirmed': 'status-confirmed',
-                    'completed': 'status-completed',
-                    'rejected': 'status-rejected'
-                };
-                return classes[status] || 'status-pending';
+                const m = {'pending':'status-pending','paid':'status-paid','confirmed':'status-confirmed','completed':'status-completed','rejected':'status-rejected'};
+                return m[status] || 'status-pending';
             }
-
             function getStatusText(status) {
-                const texts = {
-                    'pending': 'Ожидает оплаты',
-                    'paid': 'Оплачен, проверка',
-                    'confirmed': 'Подтверждён',
-                    'completed': 'Выполнен',
-                    'rejected': 'Отклонён'
-                };
-                return texts[status] || status;
+                const m = {'pending':'Ожидает оплаты','paid':'Оплачен, проверка','confirmed':'Подтверждён','completed':'Выполнен','rejected':'Отклонён'};
+                return m[status] || status;
             }
 
             function updateStatusUI(order) {
                 if (!order) return;
-
-                const status = order.status;
-                statusText.textContent = getStatusText(status);
-                statusText.className = 'status-badge ' + getStatusClass(status);
-
-                orderStatusBadge.textContent = status === 'completed' ? 'Готово' :
-                    status === 'rejected' ? 'Отмена' :
-                    status;
+                statusText.textContent = getStatusText(order.status);
+                statusText.className = 'status-badge ' + getStatusClass(order.status);
+                orderStatusBadge.textContent = order.status === 'completed' ? 'Готово' : order.status === 'rejected' ? 'Отмена' : order.status;
                 orderStatusBadge.className = 'badge';
-
-                if (order.admin_note) {
-                    adminNoteRow.style.display = 'flex';
-                    adminNoteText.textContent = order.admin_note;
-                } else {
-                    adminNoteRow.style.display = 'none';
-                }
-
-                if (status !== 'pending') {
+                adminNoteRow.style.display = order.admin_note ? 'flex' : 'none';
+                if (order.admin_note) adminNoteText.textContent = order.admin_note;
+                if (order.status !== 'pending') {
                     markPaidBtn.disabled = true;
-                    if (status === 'paid' || status === 'confirmed') {
-                        markPaidBtn.textContent = 'На проверке...';
-                    } else {
-                        markPaidBtn.textContent = 'Обработано';
-                    }
+                    markPaidBtn.textContent = (order.status === 'paid' || order.status === 'confirmed') ? 'На проверке...' : 'Обработано';
                 } else {
                     markPaidBtn.disabled = false;
                     markPaidBtn.textContent = 'Я оплатил';
                 }
-
-                if (['completed', 'rejected'].includes(status)) {
-                    if (statusPollInterval) {
-                        clearInterval(statusPollInterval);
-                        statusPollInterval = null;
-                    }
+                if (['completed','rejected'].includes(order.status) && statusPollInterval) {
+                    clearInterval(statusPollInterval);
+                    statusPollInterval = null;
                 }
             }
 
             async function pollOrderStatus() {
                 if (!currentOrderId) return;
-
-                console.log('🔄 Проверка статуса заявки:', currentOrderId);
-
-                const { data, error } = await supabase
-                    .from('orders')
-                    .select('*')
-                    .eq('id', currentOrderId)
-                    .single();
-
-                if (error) {
-                    console.error('Ошибка проверки статуса:', error.message);
-                    return;
-                }
-
-                if (data) {
-                    console.log('📦 Получены данные:', data);
-                    updateStatusUI(data);
-                }
+                const { data } = await supabase.from('orders').select('*').eq('id', currentOrderId).single();
+                if (data) updateStatusUI(data);
             }
 
             function startStatusPolling() {
                 if (statusPollInterval) clearInterval(statusPollInterval);
                 statusPollInterval = setInterval(pollOrderStatus, 10000);
-                console.log('🔄 Запущен опрос статуса каждые 10 сек');
             }
 
             async function createOrder() {
                 clearExchangeError();
-                console.log('📝 Создание заявки...');
-
                 const usdt = parseFloat(usdtInput.value);
-                if (!usdt || usdt <= 0) {
-                    showError(exchangeError, 'Введите сумму USDT');
-                    return;
-                }
-
-                if (usdt < MIN_USDT) {
-                    showError(exchangeError, `Минимальная сумма: ${MIN_USDT} USDT`);
-                    return;
-                }
+                if (!usdt || usdt <= 0) return showError(exchangeError, 'Введите сумму USDT');
+                if (usdt < MIN_USDT) return showError(exchangeError, `Минимальная сумма: ${MIN_USDT} USDT`);
 
                 const rub = usdtToRub(usdt);
-                const rubFormatted = parseFloat(rub.toFixed(2));
-                const orderId = 'order_' + Date.now() + '_' + Math.random().toString(36).substring(2, 8);
-
+                const orderId = 'order_' + Date.now() + '_' + Math.random().toString(36).substring(2,8);
                 const paymentUrl = `https://pay.example.com/checkout?amount=${usdt}&currency=USDT&order_id=${orderId}`;
 
-                console.log('📊 Данные заявки:', {
-                    usdt_amount: usdt,
-                    rub_amount: rubFormatted,
-                    rate: currentRate,
-                    payment_link: paymentUrl,
-                    order_id: orderId
-                });
+                createOrderBtn.disabled = true; createOrderBtn.textContent = 'Создаю...';
+                const { data, error } = await supabase.from('orders').insert({
+                    id: orderId, usdt_amount: usdt, rub_amount: parseFloat(rub.toFixed(2)),
+                    rate: currentRate, commission: COMMISSION, payment_link: paymentUrl,
+                    status: 'pending', created_at: new Date().toISOString()
+                }).select().single();
+                createOrderBtn.disabled = false; createOrderBtn.textContent = 'Создать заявку';
 
-                createOrderBtn.disabled = true;
-                createOrderBtn.textContent = 'Создаю...';
-
-                const { data, error } = await supabase
-                    .from('orders')
-                    .insert({
-                        id: orderId,
-                        usdt_amount: usdt,
-                        rub_amount: rubFormatted,
-                        rate: currentRate,
-                        commission: COMMISSION,
-                        payment_link: paymentUrl,
-                        status: 'pending',
-                        created_at: new Date().toISOString()
-                    })
-                    .select()
-                    .single();
-
-                createOrderBtn.disabled = false;
-                createOrderBtn.textContent = 'Создать заявку';
-
-                if (error) {
-                    console.error('❌ Ошибка Supabase:', error);
-                    showError(exchangeError, 'Ошибка: ' + error.message);
-                    return;
-                }
-
-                console.log('✅ Заявка создана:', data);
+                if (error) return showError(exchangeError, 'Ошибка: ' + error.message);
 
                 currentOrderId = data.id;
                 localStorage.setItem('lastOrderId', currentOrderId);
-
                 orderUsdt.textContent = `${data.usdt_amount} USDT`;
                 orderRub.textContent = `${data.rub_amount} ₽`;
                 paymentLink.href = data.payment_link;
                 paymentLink.textContent = data.payment_link;
                 orderIdText.textContent = data.id;
-
-                tgNickname.value = '';
-                txHash.value = '';
-                clearError(orderError);
-                clearError(orderSuccess);
-                markPaidBtn.disabled = false;
-                markPaidBtn.textContent = 'Я оплатил';
-
+                tgNickname.value = ''; txHash.value = ''; sbpBank.value = ''; sbpPhone.value = '';
+                clearError(orderError); clearError(orderSuccess);
+                markPaidBtn.disabled = false; markPaidBtn.textContent = 'Я оплатил';
                 updateStatusUI(data);
-
                 exchangeCard.style.display = 'none';
                 orderCard.style.display = 'block';
-
                 startStatusPolling();
-
                 orderCard.scrollIntoView({ behavior: 'smooth' });
             }
 
             async function markAsPaid() {
-                clearError(orderError);
-                clearError(orderSuccess);
-
+                clearError(orderError); clearError(orderSuccess);
                 const nickname = tgNickname.value.trim();
                 const hash = txHash.value.trim();
+                const bank = sbpBank.value.trim();
+                const phone = sbpPhone.value.trim();
 
-                if (!nickname) {
-                    showError(orderError, 'Укажите ваш Telegram ник');
-                    return;
-                }
-                if (!hash) {
-                    showError(orderError, 'Вставьте хеш транзакции');
-                    return;
-                }
-                if (!currentOrderId) {
-                    showError(orderError, 'Заявка не найдена');
-                    return;
-                }
+                if (!nickname) return showError(orderError, 'Укажите ваш Telegram ник');
+                if (!hash) return showError(orderError, 'Вставьте хеш транзакции');
+                if (!bank) return showError(orderError, 'Укажите банк для выплаты');
+                if (!phone) return showError(orderError, 'Укажите номер телефона для СБП');
+                if (!currentOrderId) return showError(orderError, 'Заявка не найдена');
 
-                console.log('💳 Отметка оплаты...');
+                markPaidBtn.disabled = true; markPaidBtn.textContent = 'Отправляю...';
+                const { error } = await supabase.from('orders').update({
+                    telegram_nickname: nickname, tx_hash: hash,
+                    sbp_bank: bank, sbp_phone: phone,
+                    status: 'paid', updated_at: new Date().toISOString()
+                }).eq('id', currentOrderId);
 
-                markPaidBtn.disabled = true;
-                markPaidBtn.textContent = 'Отправляю...';
+                if (error) { markPaidBtn.disabled = false; markPaidBtn.textContent = 'Я оплатил'; return showError(orderError, 'Ошибка: ' + error.message); }
 
-                const { error } = await supabase
-                    .from('orders')
-                    .update({
-                        telegram_nickname: nickname,
-                        tx_hash: hash,
-                        status: 'paid',
-                        updated_at: new Date().toISOString()
-                    })
-                    .eq('id', currentOrderId);
-
-                if (error) {
-                    console.error('❌ Ошибка обновления:', error);
-                    markPaidBtn.disabled = false;
-                    markPaidBtn.textContent = 'Я оплатил';
-                    showError(orderError, 'Ошибка: ' + error.message);
-                    return;
-                }
-
-                console.log('✅ Статус обновлён на paid');
-
-                markPaidBtn.disabled = true;
-                markPaidBtn.textContent = 'Отправлено на проверку';
-                statusText.textContent = 'Оплачен, проверка';
-                statusText.className = 'status-badge status-paid';
+                markPaidBtn.disabled = true; markPaidBtn.textContent = 'Отправлено на проверку';
+                statusText.textContent = 'Оплачен, проверка'; statusText.className = 'status-badge status-paid';
                 orderStatusBadge.textContent = 'paid';
                 showSuccess(orderSuccess, 'Данные отправлены! Ожидайте подтверждения.');
             }
 
             async function checkStatus() {
-                checkStatusBtn.textContent = 'Проверяю...';
-                checkStatusBtn.disabled = true;
+                checkStatusBtn.textContent = 'Проверяю...'; checkStatusBtn.disabled = true;
                 await pollOrderStatus();
-                setTimeout(() => {
-                    checkStatusBtn.textContent = 'Обновить статус';
-                    checkStatusBtn.disabled = false;
-                }, 500);
+                setTimeout(() => { checkStatusBtn.textContent = 'Обновить статус'; checkStatusBtn.disabled = false; }, 500);
             }
 
             function copyLink() {
                 const link = paymentLink.href;
-                if (navigator.clipboard) {
-                    navigator.clipboard.writeText(link).then(() => {
-                        copyLinkBtn.textContent = 'Скопировано!';
-                        setTimeout(() => {
-                            copyLinkBtn.textContent = 'Скопировать';
-                        }, 2000);
-                    });
-                } else {
-                    const temp = document.createElement('textarea');
-                    temp.value = link;
-                    document.body.appendChild(temp);
-                    temp.select();
-                    document.execCommand('copy');
-                    document.body.removeChild(temp);
-                    copyLinkBtn.textContent = 'Скопировано!';
-                    setTimeout(() => {
-                        copyLinkBtn.textContent = 'Скопировать';
-                    }, 2000);
-                }
+                if (navigator.clipboard) { navigator.clipboard.writeText(link).then(() => { copyLinkBtn.textContent = 'Скопировано!'; setTimeout(() => copyLinkBtn.textContent = 'Скопировать', 2000); }); }
+                else { const t = document.createElement('textarea'); t.value = link; document.body.appendChild(t); t.select(); document.execCommand('copy'); document.body.removeChild(t); copyLinkBtn.textContent = 'Скопировано!'; setTimeout(() => copyLinkBtn.textContent = 'Скопировать', 2000); }
             }
 
             function resetToNewOrder() {
-                if (statusPollInterval) {
-                    clearInterval(statusPollInterval);
-                    statusPollInterval = null;
-                }
-
-                currentOrderId = null;
-                localStorage.removeItem('lastOrderId');
-
-                exchangeCard.style.display = 'block';
-                orderCard.style.display = 'none';
-
-                usdtInput.value = '100';
-                updateRub();
-
+                if (statusPollInterval) { clearInterval(statusPollInterval); statusPollInterval = null; }
+                currentOrderId = null; localStorage.removeItem('lastOrderId');
+                exchangeCard.style.display = 'block'; orderCard.style.display = 'none';
+                usdtInput.value = '100'; updateRub();
                 exchangeCard.scrollIntoView({ behavior: 'smooth' });
             }
 
@@ -1053,75 +775,35 @@
             checkStatusBtn.addEventListener('click', checkStatus);
             copyLinkBtn.addEventListener('click', copyLink);
             newOrderBtn.addEventListener('click', resetToNewOrder);
-
-            usdtInput.addEventListener('keydown', function(e) {
-                if (e.key === 'Enter') {
-                    createOrder();
-                }
-            });
+            usdtInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') createOrder(); });
 
             async function restoreOrder() {
-                const savedOrderId = localStorage.getItem('lastOrderId');
-                if (!savedOrderId) return;
-
-                console.log('🔍 Восстановление заявки:', savedOrderId);
-
-                const { data, error } = await supabase
-                    .from('orders')
-                    .select('*')
-                    .eq('id', savedOrderId)
-                    .single();
-
-                if (error || !data) {
-                    console.log('Заявка не найдена, сбрасываем');
-                    localStorage.removeItem('lastOrderId');
-                    return;
-                }
-
-                if (['completed', 'rejected'].includes(data.status)) {
-                    console.log('Заявка в финальном статусе:', data.status);
-                    localStorage.removeItem('lastOrderId');
-                    return;
-                }
-
-                console.log('✅ Заявка восстановлена:', data);
-
+                const sid = localStorage.getItem('lastOrderId');
+                if (!sid) return;
+                const { data } = await supabase.from('orders').select('*').eq('id', sid).single();
+                if (!data || ['completed','rejected'].includes(data.status)) { localStorage.removeItem('lastOrderId'); return; }
                 currentOrderId = data.id;
                 orderUsdt.textContent = `${data.usdt_amount} USDT`;
                 orderRub.textContent = `${data.rub_amount} ₽`;
-                paymentLink.href = data.payment_link;
-                paymentLink.textContent = data.payment_link;
+                paymentLink.href = data.payment_link; paymentLink.textContent = data.payment_link;
                 orderIdText.textContent = data.id;
                 tgNickname.value = data.telegram_nickname || '';
                 txHash.value = data.tx_hash || '';
-
+                sbpBank.value = data.sbp_bank || '';
+                sbpPhone.value = data.sbp_phone || '';
                 updateStatusUI(data);
-
-                exchangeCard.style.display = 'none';
-                orderCard.style.display = 'block';
-
-                if (!['completed', 'rejected'].includes(data.status)) {
-                    startStatusPolling();
-                }
+                exchangeCard.style.display = 'none'; orderCard.style.display = 'block';
+                if (!['completed','rejected'].includes(data.status)) startStatusPolling();
             }
 
-            function init() {
-                console.log('🚀 Инициализация обменника...');
+            rateDisplay.textContent = currentRate.toFixed(2);
+            updateRub();
+            restoreOrder();
+            setInterval(() => {
+                currentRate = Math.round((96.45 + (Math.random()-0.5)*2) * 100) / 100;
                 rateDisplay.textContent = currentRate.toFixed(2);
                 updateRub();
-                restoreOrder();
-
-                setInterval(() => {
-                    const variation = (Math.random() - 0.5) * 2;
-                    currentRate = Math.round((96.45 + variation) * 100) / 100;
-                    rateDisplay.textContent = currentRate.toFixed(2);
-                    updateRub();
-                }, 60000);
-
-                console.log('✅ Обменник готов к работе');
-            }
-
-            init();
+            }, 60000);
         })();
     </script>
 </body>
