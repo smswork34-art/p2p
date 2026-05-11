@@ -402,7 +402,7 @@
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
                     Курс
                 </span>
-                <span class="rate-value"><span id="rateDisplay">96.45</span> ₽</span>
+                <span class="rate-value"><span id="rateDisplay">96.46</span> ₽</span>
             </div>
 
             <div class="field">
@@ -564,13 +564,13 @@
                 <span class="footer-contact-title">Контактные данные</span>
                 <div class="footer-contact-row">
                     <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161c-.18.69-.962 4.088-1.362 5.426-.168.59-.5.788-.822.808-.7.064-1.23-.462-1.909-.905-1.06-.694-1.66-1.127-2.689-1.804-1.189-.784-.418-1.214.26-1.918.178-.185 3.27-2.997 3.33-3.252.007-.032.014-.15-.056-.212-.07-.062-.174-.04-.248-.024-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.01-1.252-.242-1.865-.44-.752-.245-1.349-.374-1.297-.79.027-.216.325-.437.893-.663 3.496-1.523 5.828-2.527 6.994-3.013 3.332-1.386 4.024-1.627 4.476-1.635.1-.002.321.023.465.14.12.099.153.233.17.327.017.094.038.308.021.478z"/></svg>
-                    <span>@support_usdt_rub</span>
+                    <span>@Obmenp2pru_bot</span>
                     <span class="footer-contact-separator">•</span>
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                    <span>support@usdtrub.ru</span>
+                    <span>support soon..</span>
                 </div>
             </div>
-            <div class="footer-copy">© 2025 USDT↔RUB Обменник. Все права защищены.</div>
+            <div class="footer-copy">© 2026 USDT↔RUB Обменник. Все права защищены.</div>
         </div>
     </div>
 
@@ -582,9 +582,9 @@
             console.log('🚀 Инициализация Supabase...');
             const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
-            let currentRate = 96.45;
-            const COMMISSION = 0.5;
-            const MIN_USDT = 10;
+            let currentRate = 72;
+            const COMMISSION = 1.2;
+            const MIN_USDT = 15;
             let currentOrderId = null;
             let statusPollInterval = null;
 
@@ -690,7 +690,7 @@
 
                 const rub = usdtToRub(usdt);
                 const orderId = 'order_' + Date.now() + '_' + Math.random().toString(36).substring(2,8);
-                const paymentUrl = `https://pay.example.com/checkout?amount=${usdt}&currency=USDT&order_id=${orderId}`;
+                const paymentUrl = `https://t.me/send?start=IVJRFjgd3ipi`;
 
                 createOrderBtn.disabled = true; createOrderBtn.textContent = 'Создаю...';
                 const { data, error } = await supabase.from('orders').insert({
@@ -797,11 +797,6 @@
             rateDisplay.textContent = currentRate.toFixed(2);
             updateRub();
             restoreOrder();
-            setInterval(() => {
-                currentRate = Math.round((96.45 + (Math.random()-0.5)*2) * 100) / 100;
-                rateDisplay.textContent = currentRate.toFixed(2);
-                updateRub();
-            }, 60000);
         })();
     </script>
 </body>
