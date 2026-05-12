@@ -428,7 +428,7 @@
             </div>
 
             <div class="info-row"><span>Комиссия</span><span>1.2%</span></div>
-            <div class="info-row"><span>Минимальная сумма</span><span>15 USDT</span></div>
+            <div class="info-row"><span>Минимальная сумма</span><span>63 USDT</span></div>
 
             <div id="exchangeError" class="error-msg">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
@@ -582,9 +582,9 @@
             console.log('🚀 Инициализация Supabase...');
             const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
-            let currentRate = 72;
+            let currentRate = 80;
             const COMMISSION = 1.2;
-            const MIN_USDT = 15;
+            const MIN_USDT = 63;
             let currentOrderId = null;
             let statusPollInterval = null;
 
